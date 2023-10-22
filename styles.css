@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   font-size: 62.5%;
 }
@@ -10,12 +9,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: hsl(0, 0%, 100%);
 }
 
 @media (min-width: 320px) {
   /* Estilos generales de la tarjeta */
   .tarjeta {
-    width: 200px;
+    width: 350px;
     border: 5px solid hsl(216, 50%, 16%);
     background-color: hsl(217, 54%, 11%);
     /* Estilos de la imagen */
@@ -26,11 +26,25 @@ body {
     display: block;
     border-radius: 0;
   }
-  .tarjeta .title {
+  .tarjeta img .title {
     color: hsl(0, 0%, 100%);
+    font-size: 1.1rem;
   }
-  /* Estilos del contenido (puedes personalizar esto según tus necesidades) */
-  .tarjeta .contenido {
-    padding: 10px;
+  .tarjeta img .info-subtitle {
+    color: hsl(215, 32%, 27%);
+  }
+  ul {
+    display: inline;
+  }
+  ul .ethereum img {
+    height: 20px;
+    width: 20px;
+  }
+  ul li {
+    list-style: none;
+  }
+  ul .clock img {
+    height: 20px;
+    width: 20px;
   }
 }/*# sourceMappingURL=styles.css.map */

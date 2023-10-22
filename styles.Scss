@@ -1,0 +1,69 @@
+$very-dark-blue-main-BG: hsl(217, 54%, 11%);
+$Very-dark-blue--card-BG: hsl(216, 50%, 16%);
+$Very-dark-blue--line: hsl(215, 32%, 27%);
+$White: hsl(0, 0%, 100%);
+
+$mobile: 320px;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.8rem;
+    background-color: $very-dark-blue-main-BG;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $White;
+}
+
+@media(min-width: $mobile) {
+
+    /* Estilos generales de la tarjeta */
+    .tarjeta {
+        width: 350px;
+        border: 5px solid $Very-dark-blue--card-BG;
+        background-color: $very-dark-blue-main-BG;
+
+        /* Estilos de la imagen */
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 0;
+
+            .title {
+                color: $White;
+                font-size: 1.1rem;
+            }
+
+            .info-subtitle {
+                color: $Very-dark-blue--line;
+            }
+        }
+    }
+
+    ul {
+        display: inline;
+
+        .ethereum {
+            img {
+                height: 20px;
+                width: 20px;
+            }
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .clock {
+            img {
+                height: 20px;
+                width: 20px;
+            }
+        }
+    }
+}
